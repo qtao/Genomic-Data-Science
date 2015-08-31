@@ -1,4 +1,4 @@
-# Genomic-Data-Science
+# [Genomic-Data-Science] (https://www.coursera.org/specialization/genomics/41)
 ## Genomic data science specialization
 
 ### Incentives & Benefits
