@@ -1,5 +1,5 @@
-# [Genomic-Data-Science] (https://www.coursera.org/specialization/genomics/41)
-## Genomic data science specialization (Johns Hopkins University and Coursera)
+# [Genomic Data Science Specialization (Johns Hopkins University and Coursera)] (https://www.coursera.org/specialization/genomics/41)
+
 
 ### Incentives & Benefits
 High-throughput experimental techniques have enabled the Data Science revolution in modern biology. People with skills in biology, computations and statistics are fundamental to this change. This Specialization will help you be a part of the new wave of Big Data Science in Genomics. These skills are in high demand across modern biology, from bench scientists in industry and academia to data scientists working with healthcare analytics.
