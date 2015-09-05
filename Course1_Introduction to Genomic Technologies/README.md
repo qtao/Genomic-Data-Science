@@ -1,5 +1,7 @@
 # [Introduction to Genomic Technologies] (https://www.coursera.org/course/genintro) 
 
+### [Certificate](https://www.coursera.org/account/accomplishments/certificate/PWE7Y5LF9Z)
+
 ### Part of the Genomic Data Science Specialization
 The basic biology of modern genomics and the experimental tools used for measurement. This is the first course in the Genomic Big Data Science Specialization.
 
