@@ -37,8 +37,6 @@ The Galaxy Project (http://galaxyproject.org/) provides user friendly software f
 
 This page includes description about analyses of DNA polymorphic sites of father-mother-child sequencing samples:
 
-Stage 1 - identify polymorphic sites
-
 step 1: load data - the data are loaded from local files, set "fastqsanger" format and "hg19" database on the starting page
 
 step 2: check quality of all sequencing files - use FastQC tool (version: 0.63) to check quality of the sequencing
