@@ -9,8 +9,8 @@ This specialization will teach you to understand, analyze, and interpret data fr
 
 ### Projects
 
-#### Project1
+#### Project1 -- Concepts of Genomic Data Science
 
 In this project you will be reading a genomic data science paper and answering some questions to help you learn about how the different fields in genomic data science work together and to evaluate your understanding of some of the concepts we have learned throughout the course. The paper we are reading is called: “Microbial Genes in the Human Genome: Lateral Transfer or Gene Loss?” You can access the paper from the Science Magazine site here: http://www.sciencemag.org/content/292/5523/1903.full.
 
-Project Solution
+[Project Solution](https://github.com/lanttern/Genomic-Data-Science/blob/master/Course1_Introduction%20to%20Genomic%20Technologies/Course%20Project_test2.pdf)
