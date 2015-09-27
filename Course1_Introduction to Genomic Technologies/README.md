@@ -46,3 +46,5 @@ evaluate your understanding of some of the concepts we have learned throughout t
 The paper we are reading is called: “Microbial Genes in the Human Genome: Lateral Transfer or
 Gene Loss?” You can access the paper from the Science Magazine site here:
 http://www.sciencemag.org/content/292/5523/1903.full.
+
+[Project Solution](https://github.com/lanttern/Genomic-Data-Science/blob/master/Course1_Introduction%20to%20Genomic%20Technologies/Course%20Project_test2.pdf)
