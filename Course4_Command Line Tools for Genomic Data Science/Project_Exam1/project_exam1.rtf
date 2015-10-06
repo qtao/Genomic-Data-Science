@@ -1,0 +1,237 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red249\green249\blue249;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs32 \cf0 Direct to project1 folder\
+\pard\pardeftab720\sl560
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6] 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 cd project1\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+Extract files\
+\pard\pardeftab720\sl560
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project1]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gunzip gencommand_proj1_data.tar.gz\
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project1]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 tar -xf gencommand_proj1_data.tar\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+Direct to gencommand_proj1_data folder\
+\pard\pardeftab720\sl560
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project1]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 cd gencommand_proj1_data\
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 ls\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+Question1: \cf2 \cb3 \expnd0\expndtw0\kerning0
+How many chromosomes are there in the genome?\
+\pard\pardeftab720\sl560
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+[guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 grep -c  ">" apple.genome\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 \
+Question2: \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 How many genes and transcript variants?\
+\pard\pardeftab720\sl560
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+[guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 cut -f1 apple.genes | uniq | wc -l (or cut -f1 apple.genes | sort -u | wc -l)\
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 [guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 cut -f2 apple.genes | uniq | wc -l (or cut -f2 apple.genes | sort -u | wc -l)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 \
+Question3: \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 How many genes have a single splice variant?\cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\pard\pardeftab720\sl560
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 [guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 cut -f1 apple.genes | uniq -c | grep \'93 1 \'93 | wc -l\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 \
+Question4: \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 How may genes have 2 or more splice variants?\
+\pard\pardeftab720\sl560
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+[guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 cut -f1 apple.genes | uniq -c | grep -v \'93 1 \'93 | wc -l\cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf2 \expnd0\expndtw0\kerning0
+\
+Question5: How many genes are there on the \'91+\'92 and \'91-\'92 strands, respectively?\
+\pard\pardeftab720\sl560
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+[guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 cut -f1,4 apple.genes | grep "+" | uniq | wc -l\
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 [guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 cut -f1,4 apple.genes | grep "-" | uniq | wc -l\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 \
+Question6: \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 How many genes are there on each chromosome? List them in the order in which they are listed in the genome, i.e. genes on chr1, chr2, etc.\
+\pard\pardeftab720\sl560
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+[guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 cut -f1,3 apple.genes | grep "chr1" | uniq | wc -l\
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 [guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 cut -f1,3 apple.genes | grep "chr2\'94 | uniq | wc -l\
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 [guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 cut -f1,3 apple.genes | grep "chr3\'94 | uniq | wc -l\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 \
+Question7: \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 How many transcripts are there on each chromosome? Follow instructions above.\
+\pard\pardeftab720\sl560
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+[guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 cut -f2,3 apple.genes | grep "chr1" | uniq | wc -l\
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 [guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 cut -f2,3 apple.genes | grep "chr2\'94 | uniq | wc -l\
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 [guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 cut -f2,3 apple.genes | grep "chr3\'94 | uniq | wc -l\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 \
+Question8: \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 How many genes are in common between condition A and condition B?\
+\pard\pardeftab720\sl560
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+[guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 cut -f1 apple.conditionA | sort -u > conditionA\
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 [guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 cut -f1 apple.conditionB | sort -u > conditionB\
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 [guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 comm -1 -2 conditionA conditionB | wc -l\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 \
+Question9: \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 How many genes are specific to condition A? How many genes are specific to condition B?\
+\pard\pardeftab720\sl560
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+[guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 comm -2 -3 conditionA conditionB | wc -l\
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 [guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 comm -1 -3 conditionA conditionB | wc -l\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 \
+Question10: \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 How many genes are in common to all three conditions?\
+\pard\pardeftab720\sl560
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+[guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 comm -1 -2 conditionA conditionB > conditionAB\
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 [guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 cut -f1 apple.conditionC | sort -u > conditionC\
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 [guest@centos6 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 gencommand_proj1_data
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+]$ 
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 comm -1 -2 conditionAB conditionC | wc -l}

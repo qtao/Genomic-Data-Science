@@ -1,0 +1,136 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red249\green249\blue249;}
+\margl1440\margr1440\vieww13840\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl560
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+unzip files:\
+\pard\pardeftab720\sl560
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+cd project2\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+gunzip gencommand_proj2_data.tar.gz\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+tar xvc gencommand_proj2_data.tar\
+\
+1. How many alignments does the set contain?\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+samtools view athal_wu_0_A.bam | head\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+samtools view athal_wu_0_A.bam | wc -l\
+\
+2. How many alignments show the read\'92s mate unmapped?\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+samtools view athal_wu_0_A.bam | cut -f7 | grep "*" | wc -l\
+\
+3. How many alignments contain a deletion (D)?\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+samtools view athal_wu_0_A.bam | cut -f6 | grep \'93D\'94 | wc -l\
+\
+4. How many alignments show the read\'92s mate mapped to the same chromosome?\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+samtools view athal_wu_0_A.bam | cut -f7 | grep \'93=\'93 | wc -l\
+\
+5. How many alignments are spliced?\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+samtools view athal_wu_0_A.bam | cut -f6 | grep \'93N\'94 | wc -l\
+\
+6. How many alignments does the set contain?\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+nohup samtools sort athal_wu_0_A.bam athal_wu_0_A.sorted &\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+samtools index athal_wu_0_A.sorted.bam\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+samtools view athal_wu_0_A.sorted.bam "Chr3:11777000-11794000" | head\
+\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+samtools view athal_wu_0_A.sorted.bam "Chr3:11777000-11794000" | wc -l\
+\
+7. How many alignments show the read\'92s mate unmapped?\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+samtools view athal_wu_0_A.sorted.bam "Chr3:11777000-11794000" | cut -f7 | grep "*" | wc -l\
+\
+8. How many alignments contain a deletion (D)?\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+samtools view athal_wu_0_A.sorted.bam "Chr3:11777000-11794000"  | cut -f6 | grep \'93D\'94 | wc -l\
+\
+9. How many alignments show the read\'92s mate mapped to the same chromosome?\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+samtools view athal_wu_0_A.sorted.bam "Chr3:11777000-11794000"  | cut -f7 | grep \'93=\'93 | wc -l\
+\
+10. How many alignments are spliced?\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+samtools view athal_wu_0_A.sorted.bam "Chr3:11777000-11794000" | cut -f6 | grep \'93N\'94 | wc -l\
+\
+11. How many sequences are in the genome file?\
+12. What is the length of the first sequence in the genome file?\
+13. What alignment tool was used?\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+samtools view -H athal_wu_0_A.bam\
+\
+14. What is the read identifier (name) for the first alignment?\
+15. What is the start position of this read\'92s mate on the genome? Give this as \'91chrom:pos\'92 if the read was mapped, or \'91*\'94 if unmapped.\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+samtools view athal_wu_0_A.bam | head\
+\
+16. How many overlaps (each overlap is reported on one line) are reported?\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+bedtools bamtobed -i athal_wu_0_A.bam > data.bed\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+head data.bed\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+bedtools intersect -wo -a athal_wu_0_A_annot.gtf -b data.bed | head\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+bedtools intersect -wo -a athal_wu_0_A_annot.gtf -b data.bed | wc -l\
+\
+17. How many of these are 10 bases or longer?\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+bedtools intersect -wo -a athal_wu_0_A_annot.gtf -b data.bed | cut -f16 > count_base.txt\
+\
+18. How many alignments overlap the annotations?\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+bedtools intersect -wo -a athal_wu_0_A_annot.gtf -b data.bed | wc -l\
+\
+19. Conversely, how many exons have reads mapped to them?\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+bedtools intersect -wo -a athal_wu_0_A_annot.gtf -b data.bed | cut -f4 | sort -u | wc -l\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+bedtools intersect -wo -a athal_wu_0_A_annot.gtf -b data.bed | cut -f5 | sort -u | wc -l\
+\
+20. If you were to convert the transcript annotations in the file \'93athal_wu_0_A_annot.gtf\'94 into BED format, how many BED records would be generated?\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+bedtools intersect -wo -a athal_wu_0_A_annot.gtf -b data.bed | cut -f9 | cut -d " " -f4 | head\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+[guest@centos6 project2]$ \cf2 \cb3 \expnd0\expndtw0\kerning0
+bedtools intersect -wo -a athal_wu_0_A_annot.gtf -b data.bed | cut -f9 | cut -d " " -f4 | sort -u | wc -l\
+}
