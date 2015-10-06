@@ -42,4 +42,7 @@ Dictionaries
 8. Biopython
 
 #### Project - develop python bioinformatics tools to analyze DNA sequence 
-In this project, I Write a Python program that takes as input a file containing DNA sequences in multi-FASTA format, and computes the answers to the following questions. You can choose to write one program with multiple functions to answer these questions, or you can write several programs to address them. We will provide a multi-FASTA file for you, and you will run your program to answer the exam questions. 
+In this project, a Python program that takes as input a file containing DNA sequences in multi-FASTA format was developed. The program includes a set of tools for dna sequence analyses (a. check records in file (count_records), b. compute the length of each DNA sequence (check_length), c. identify open read frame in each DNA sequence (orf_identifier), d. identify repeated motif in sequence (repeats_identifier)). To use the tool  sets, please assign the path and file name to the class function. For example: dna_tools = dna_tool_sets ("../data/dna.example.fasta"). Then, call the functions in the class, e.g call function to check length of dna sequence: length = dna_tools.check_length()
+
+[Python code]()
+[Project solution] ()
