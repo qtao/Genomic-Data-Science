@@ -47,4 +47,4 @@ In this project, a Python program that takes as input a file containing DNA sequ
 
 [Python code](https://github.com/lanttern/Genomic-Data-Science/blob/master/Course3_Python%20for%20Genomic%20Data%20Science/Python%20Project/script/dna_tools.py)
 
-[Project solution] ()
+[Project solution] (https://github.com/lanttern/Genomic-Data-Science/blob/master/Course3_Python%20for%20Genomic%20Data%20Science/Python%20Project/final_project_results.pdf)
