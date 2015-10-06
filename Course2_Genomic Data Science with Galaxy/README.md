@@ -1,6 +1,6 @@
 # [Genomic Data Science with Galaxy](https://www.coursera.org/course/gengalaxy)
 
-![Certificate](https://github.com/lanttern/Genomic-Data-Science/blob/master/Course2_Genomic%20Data%20Science%20with%20Galaxy/images/Coursera%20gengalaxy%202015_certificate.png)
+[Certificate](https://github.com/lanttern/Genomic-Data-Science/blob/master/Course2_Genomic%20Data%20Science%20with%20Galaxy/images/Coursera%20gengalaxy%202015_certificate.png)
 
 #### Part of the Genomic Data Science Specialization
 Learn to use the tools that are available from the Galaxy Project. This is the second course in the Genomic Big Data Science Specialization.
