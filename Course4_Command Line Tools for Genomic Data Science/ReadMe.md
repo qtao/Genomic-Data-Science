@@ -20,6 +20,7 @@ This class will cover an introduction to command line tools for managing genomic
 2. Sequences and genomic features
 
    -Formats: Fastq, BED, GTF, SAM
+   
    -Tools: Samtools, Bedtools
    
 3. Alignment and sequence variation
@@ -31,9 +32,13 @@ This class will cover an introduction to command line tools for managing genomic
    -Application: variant calling
 
 4. Transcriptomics
+
    -Tophat
+
    -Cufflinks
-   - IGV
+   
+   -IGV
+   
    -Application: RNA-seq analysis
    
 #### Projects - Develop Pipeline for Next Generation Sequencing: Analyze DNA Alignment, DNA Assembly, Genetic Variants and RNA Sequencing in Linux
@@ -77,3 +82,5 @@ NOTE: The genome and annotation data were obtained and modified from the Arabido
 [Project_D Code](https://github.com/lanttern/Genomic-Data-Science/blob/master/Course4_Command%20Line%20Tools%20for%20Genomic%20Data%20Science/Project_Exam4/project_exam4.pdf)
 
 [Project_D Solution](https://github.com/lanttern/Genomic-Data-Science/blob/master/Course4_Command%20Line%20Tools%20for%20Genomic%20Data%20Science/Project_Exam4/Exam4.pdf)
+
+[Commands](https://github.com/lanttern/Genomic-Data-Science/blob/master/Course4_Command%20Line%20Tools%20for%20Genomic%20Data%20Science/Project_Exam4/commands.pdf)
