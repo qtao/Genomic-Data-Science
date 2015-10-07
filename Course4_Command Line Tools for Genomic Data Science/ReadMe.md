@@ -1,6 +1,6 @@
 # Command Line Tools for Genomic Data Science
 
-[Certificate]()
+[Certificate](https://github.com/lanttern/Genomic-Data-Science/blob/master/Course4_Command%20Line%20Tools%20for%20Genomic%20Data%20Science/images/Coursera%20gencommand%202015.pdf)
 
 #### Part of the Genomic Data Science Specialization
 
