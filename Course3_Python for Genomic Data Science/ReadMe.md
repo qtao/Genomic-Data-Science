@@ -1,6 +1,6 @@
 # Python for Genomic Data Science
 
-[Certificate] ()
+[Certificate] (https://github.com/lanttern/Genomic-Data-Science/blob/master/Course3_Python%20for%20Genomic%20Data%20Science/images/Coursera%20genpython%202015.pdf)
 
 #### Part of the Genomic Data Science Specialization
 
